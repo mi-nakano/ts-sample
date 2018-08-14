@@ -12,12 +12,19 @@ let t1: Type1 = {
   foo: "hoge",
   val: 1
 };
-let t12: Type1 & Type2 = {
+let t2: Type2 = {
+  foo: "hoge",
+  bar: "hoge",
+};
+let t1and2: Type1 & Type2 = {
   foo: "hoge",
   val: 1,
   bar: "hoge",
 }
+let t1or2: Type1 | Type2 = t1;
 
 
 console.log(t1);
-console.log(t12);
+console.log(t2);
+console.log(t1and2);
+console.log(t1or2);
